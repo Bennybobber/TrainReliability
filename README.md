@@ -101,3 +101,9 @@ A stored record of what the Station Board looked like at a point in time.
 - Frontend: React (consumes API)
 - Integration: Darwin feed via adapter interface (mock initially)
 - Auth: none initially; later add cookie-based auth / passkeys for public launch
+
+
+## Running the API
+
+```bash
+dotnet run --project src/RailWatch.Api
