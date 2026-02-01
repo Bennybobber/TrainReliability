@@ -5,4 +5,7 @@
     <Project Path="src/RailWatch.Infrastructure/RailWatch.Infrastructure.csproj" />
     <Project Path="src/RailWatch.Worker/RailWatch.Worker.csproj" />
   </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/RailWatch.ArchitectureTests/RailWatch.ArchitectureTests.csproj" />
+  </Folder>
 </Solution>

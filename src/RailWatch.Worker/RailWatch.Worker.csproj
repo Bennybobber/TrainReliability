@@ -12,7 +12,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\RailWatch.Domain\RailWatch.Domain.csproj" />
     <ProjectReference Include="..\RailWatch.Infrastructure\RailWatch.Infrastructure.csproj" />
   </ItemGroup>
 </Project>

@@ -1,7 +1,6 @@
 <Project Sdk="Microsoft.NET.Sdk.Web">
 
   <ItemGroup>
-    <ProjectReference Include="..\RailWatch.Domain\RailWatch.Domain.csproj" />
     <ProjectReference Include="..\RailWatch.Infrastructure\RailWatch.Infrastructure.csproj" />
   </ItemGroup>
 

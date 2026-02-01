@@ -102,6 +102,12 @@ A stored record of what the Station Board looked like at a point in time.
 - Integration: Darwin feed via adapter interface (mock initially)
 - Auth: none initially; later add cookie-based auth / passkeys for public launch
 
+## Project boundaries
+
+- RailWatch.Domain: pure domain + interfaces. No Infrastructure references.
+- RailWatch.Infrastructure: EF Core, external providers, implementations. References Domain.
+- RailWatch.Api: HTTP endpoints + DI wiring. References Domain + Infrastructure.
+- RailWatch.Worker: background jobs + DI wiring. References Domain + Infrastructure.
 
 ## Running the API
 
