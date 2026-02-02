@@ -111,5 +111,32 @@ A stored record of what the Station Board looked like at a point in time.
 
 ## Running the API
 
-```bash
+## Local development
+
+### Secrets (recommended: dotnet user-secrets)
+
+This project uses **dotnet user-secrets** for local development secrets (do not commit secrets to the repo).
+
+### Set database connection string (API)
+
+Set via environment variable:
+
+- `ConnectionStrings__Default`
+
+Example (SQL Server Express, Windows auth):
+
+`Server=.\SQLEXPRESS;Database=RailWatch;Trusted_Connection=True;MultipleActiveResultSets=True;Encrypt=True;TrustServerCertificate=True;`
+
+
+```powershell
+dotnet user-secrets init --project src/RailWatch.Api
+dotnet user-secrets set "ConnectionStrings:Default" "Server=.\SQLEXPRESS;Database=RailWatch;Trusted_Connection=True;MultipleActiveResultSets=True;Encrypt=True;TrustServerCertificate=True;" --project src/RailWatch.Api
+```
+Example value above is a placeholder format. Use your own server/credentials.
+Do not commit real connection strings.
+
+
+Run the API:
+```bash 
 dotnet run --project src/RailWatch.Api
+```

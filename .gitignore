@@ -1,3 +1,7 @@
 ﻿**/bin/
 **/obj/
 .idea/
+.env
+.env.*
+secrets.json
+*.secrets.json

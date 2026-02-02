@@ -1,4 +1,4 @@
-﻿namespace RailWatch.Infrastructure.interfaces;
+namespace RailWatch.Domain.Integrations;
 
 public interface IDepartureBoardProvider
 {

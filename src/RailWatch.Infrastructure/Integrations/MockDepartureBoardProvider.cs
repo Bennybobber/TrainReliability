@@ -1,4 +1,4 @@
-﻿using RailWatch.Infrastructure.interfaces;
+﻿using RailWatch.Domain.Integrations;
 
 namespace RailWatch.Infrastructure.Integrations;
 
