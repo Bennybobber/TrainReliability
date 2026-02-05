@@ -119,18 +119,18 @@ This project uses **dotnet user-secrets** for local development secrets (do not 
 
 ### Set database connection string (API)
 
-Set via environment variable:
+## Running the API
 
-- `ConnectionStrings__Default`
+### Prereqs
+- .NET 10 SDK
+- SQL Server (e.g. SQLEXPRESS)
 
-Example (SQL Server Express, Windows auth):
-
-`Server=.\SQLEXPRESS;Database=RailWatch;Trusted_Connection=True;MultipleActiveResultSets=True;Encrypt=True;TrustServerCertificate=True;`
-
+### Configure connection string
+Set via user-secrets (recommended):
 
 ```powershell
 dotnet user-secrets init --project src/RailWatch.Api
-dotnet user-secrets set "ConnectionStrings:Default" "Server=.\SQLEXPRESS;Database=RailWatch;Trusted_Connection=True;MultipleActiveResultSets=True;Encrypt=True;TrustServerCertificate=True;" --project src/RailWatch.Api
+dotnet user-secrets set "ConnectionStrings:Default" "<YOUR_CONNECTION_STRING>" --project src/RailWatch.Api
 ```
 Example value above is a placeholder format. Use your own server/credentials.
 Do not commit real connection strings.
